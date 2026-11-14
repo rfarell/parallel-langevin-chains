@@ -36,12 +36,10 @@ Modes:
         minibatch_sgld_real_fresh.tex
         comparison_sgld.json   (AM-13 + DR-7 match rule; AM-7/VR-2 notes)
 
-Note for this repository: the fresh-mode inputs (the July 2026 fresh-seed
-confirmation runs) are archived with the NeurIPS supplementary material and
-are not included here; the protocol documents named above are not included
-either.  Archived mode needs only the files in this repository.  Host names
-are redacted in the released rows, so host checks compare against the
-redaction token.
+Note for this repository: the fresh-mode inputs and the protocol documents
+named above are not included.  Archived mode needs only the files in this
+repository.  Host names are redacted in the released rows, so host checks
+compare against the redaction token.
 """
 
 import argparse

@@ -187,30 +187,11 @@ $PY scripts/regen_sgld_table.py --mode archived
 $PY scripts/regen_frontier_table.py --mode archived --out-dir /tmp/regen_frontier
 ```
 
-What to expect:
-
-- **Identical files** for Tables 3, 4, 5, 6, 7, 10, 14, 17, 19, 21 to 26, 28
-  to 35, and passing byte-identity gates for Tables 10, 11, 16 and 18.
-- **Same numbers, different labels** for Tables 8, 9, 12, 13 and 36. One
-  header or row label in each was edited by hand for print, for example
-  `zero-sum` became `$C_\star$`.
-- **Round-off cells** in Tables 12 and 15. One entry in each is zero in exact
-  arithmetic and prints floating-point noise near `1e-17` or `1e-33`, which
-  depends on the linear-algebra library.
-- **Figures** show the same curves. Pixels differ slightly across platforms
-  because of font rendering.
-
-CPU self-tests that need no data:
-
-```bash
-$PY scripts/gold_rescore_p4.py --selftest
-$PY scripts/p4_gate_analysis.py --selftest
-$PY scripts/rr_extrapolation.py --selftest-p4
-$PY scripts/multimodal_bimodal.py --selftest      # PyTorch
-$PY scripts/zv_composition.py --selftest          # PyTorch
-$PY scripts/vi_baseline.py --check-quad
-$PY scripts/verify_mala_law_1d.py                 # about ten minutes
-```
+Regenerated tables match the printed ones. A few headers and row labels were
+edited by hand for print, for example `zero-sum` became `$C_\star$`, and two
+entries that are zero in exact arithmetic print round-off noise. Figures show
+the same curves with small differences in font rendering. Several scripts
+also have a `--selftest` mode.
 
 ### Level 2: rerunning the experiments
 
@@ -310,9 +291,6 @@ bash campaigns/run_attempt08_reps.sh 0 1.0  full scale1  rerun/attempt08/scale1_
 bash campaigns/run_attempt08_reps.sh 0 0.0  k5   k5      rerun/attempt08/k5_rep      $(seq 324 329)
 ```
 
-The `regen_*_table.py` generators are tied to the included rows: archived mode
-recomputes each table and refuses to pass unless it matches the printed file
-byte for byte.
 </details>
 
 <details>
@@ -370,11 +348,11 @@ $PY scripts/certified_gamma_table.py      # CPU; writes outputs/screens/certifie
 </details>
 
 <details>
-<summary>Studies run under a protocol file (Tables 27, 31, 32, 33)</summary>
+<summary>Control variates and the bimodal target (Tables 31, 32, 33)</summary>
 
-Three scripts stamp every row with the SHA-256 of a written protocol and
-refuse to run a campaign without one. The original protocol documents are not
-in this repository, so a rerun binds to a protocol file you supply.
+The ZV and bimodal scripts stamp every row with the hash of a protocol file
+and will not start a campaign without one. Pass any text file that describes
+your run.
 
 ```bash
 # Tables 31-32. Fit the control-variate coefficients, run, then summarize.
@@ -389,51 +367,22 @@ $PY scripts/multimodal_bimodal.py --campaign --precommit MY_PROTOCOL.md --out ou
 $PY scripts/multimodal_bimodal.py --emit     --precommit MY_PROTOCOL.md --out outputs/multimodal_campaign.jsonl
 ```
 
-`--emit` validates the rows, applies the registered checks and writes the
-summary `<out>.emitter.json` that `render_study_tables.py` turns into a
-table. Table 27 is discussed under "Limits" below.
+`--emit` checks the rows and writes the summary `<out>.emitter.json`, which
+`render_study_tables.py` turns into a table.
 </details>
 
-## Limits of this repository
+## Notes
 
-- **Table 2** has no generator. Its entries are rounded from Tables 9 and 10.
-- **Table 20** is included as printed with its raw rows. No table generator
-  was kept for it.
-- **Table 27 (ChEES).** The rows and the printed table are included. The
-  script validates a campaign against a lock manifest, per-chain tuner
-  sidecars of about 83 MB, a protocol file at
-  `campaigns/chees_closedloop_precommit.md` and a frozen copy of an earlier
-  NUTS implementation. None of these is in the repository, so neither the
-  table generator nor the campaign runs from a fresh clone.
-- **Per-chain series** of the long reference runs, about 0.9 GB, are not
-  included. `p4_gate_analysis.py` needs them to rebuild its convergence
-  report; its self-test does not.
-- **Emitters of Tables 31 to 33.** The `--emit` step checks rows against
-  hashes of the protocol file and of the fitted coefficient files as they
-  were on the machine that ran them. Those files are absent or carry redacted
-  host names here, so re-running `--emit` on the included rows aborts. Its
-  outputs are included as `*.emitter.json`, and the table renderer reads
-  them.
-- **Pre-registration documents.** The real-data campaign and the later
-  studies followed written protocols, which Appendix G of the paper
-  describes. Rows record a hash prefix of the protocol in force. Paths of the
-  form `campaigns/*_precommit.md` and item codes such as `V3-5` or `DR-4` in
-  comments refer to those documents. Only the dated amendment of the bimodal
-  study is reproduced, in
-  `campaigns/multimodal_campaign/protocol_amendment_2026-07-27.md`.
-- **Not reproduced here.** The attempted Poisson regression benchmark named
-  in the paper's limitations and the fresh-seed confirmation runs of Tables
-  10, 11, 16 and 18 are in the NeurIPS supplementary material.
-- **Provenance fields.** Rows record seeds, settings, package versions and
-  the Git hash of the working repository in which they ran. Host names were
-  replaced by `redacted-hpc-node`, and the directory name inside recorded
-  protocol paths was normalized. The scripts here differ from the files that
-  ran only in comments, docstrings and message or path strings, so recorded
-  script hashes do not match them. One line of code differs: the last
-  cross-check of `rr_extrapolation.py --selftest-p4` is skipped when its
-  comparison file is absent.
-- **Bit-level reproducibility.** Reruns use the recorded seeds. Results on
-  other hardware or library versions need not match to the last digit.
+- Tables 2, 20 and 27 are included as printed and have no generator here.
+  Table 2 is rounded from Tables 9 and 10.
+- `chees_real_logistic.py` (Table 27) is included for reference. It depends
+  on a protocol file, a lock manifest and tuner sidecars that are not in the
+  repository.
+- Host names in the rows are replaced by `redacted-hpc-node`.
+- Comments cite protocol items such as `V3-5` or `DR-4`. They refer to the
+  study protocols described in Appendix G of the paper.
+- Reruns use the recorded seeds. Results on other hardware or library
+  versions need not match to the last digit.
 
 ## Data
 

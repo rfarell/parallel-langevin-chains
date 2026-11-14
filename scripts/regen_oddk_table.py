@@ -40,12 +40,10 @@ Consumed streams (harness construction): method seed+101/+202/+303
 (iid/zero_sum/antithetic), reference seed+77717, probe design_seed+1729
 (replicate-independent, AM-9).
 
-Note for this repository: the fresh-mode inputs (the July 2026 fresh-seed
-confirmation runs) are archived with the NeurIPS supplementary material and
-are not included here; the protocol documents named above are not included
-either.  Archived mode needs only the files in this repository.  Host names
-are redacted in the released rows, so host checks compare against the
-redaction token.
+Note for this repository: the fresh-mode inputs and the protocol documents
+named above are not included.  Archived mode needs only the files in this
+repository.  Host names are redacted in the released rows, so host checks
+compare against the redaction token.
 """
 
 from __future__ import annotations

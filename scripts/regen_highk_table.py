@@ -27,12 +27,10 @@ Modes:
             paper-quoted scalars (Results paragraph) get BOTH clauses).  DR-4e: fresh outputs
             go ONLY under outputs/sweeps/camera_ready_regen/highk/tables/.
 
-Note for this repository: the fresh-mode inputs (the July 2026 fresh-seed
-confirmation runs) are archived with the NeurIPS supplementary material and
-are not included here; the protocol documents named above are not included
-either.  Archived mode needs only the files in this repository.  Host names
-are redacted in the released rows, so host checks compare against the
-redaction token.
+Note for this repository: the fresh-mode inputs and the protocol documents
+named above are not included.  Archived mode needs only the files in this
+repository.  Host names are redacted in the released rows, so host checks
+compare against the redaction token.
 """
 
 import argparse
