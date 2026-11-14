@@ -1,0 +1,15 @@
+% Finite-sum quadratic SGLD 2x2 diagnostic; k=8, dim=8, n=64, batch=8, steps=70, eta=0.018, samples=2000, seed stream from 20260502. Reference ratio is the innovation-only linear theory.
+\begin{tabular}{lrrrrr}
+\toprule
+Hessian & minibatch & innovation & ref. ratio & terminal ratio & rem. norm \\
+\midrule
+common & iid & iid & 0.1250 & 0.1181 [0.1108, 0.1254] & 0.1204 \\
+common & iid & zero-sum & 0 & 1.44e-05 [1.36e-05, 1.53e-05] & 0.1205 \\
+common & balanced & iid & 0.1250 & 0.1258 [0.1180, 0.1336] & 1.87e-16 \\
+common & balanced & zero-sum & 0 & 1.22e-32 [1.15e-32, 1.30e-32] & 1.10e-16 \\
+hetero & iid & iid & 0.1250 & 0.1226 [0.1150, 0.1302] & 0.1688 \\
+hetero & iid & zero-sum & 0 & 3.72e-05 [3.49e-05, 3.95e-05] & 0.1685 \\
+hetero & balanced & iid & 0.1250 & 0.1281 [0.1201, 0.1360] & 0.0987 \\
+hetero & balanced & zero-sum & 0 & 2.02e-05 [1.90e-05, 2.15e-05] & 0.1058 \\
+\bottomrule
+\end{tabular}

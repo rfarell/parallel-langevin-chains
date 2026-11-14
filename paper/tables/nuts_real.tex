@@ -1,0 +1,30 @@
+\begin{tabular}{lllrr}
+\toprule
+Dataset & prior & kernel & $C_\star$/iid & pairwise/iid \\
+\midrule
+WDBC & 0.1 & jitter (shared $L$) & 0.474 [0.468, 0.518] & 0.481 [0.456, 0.496] \\
+WDBC & 0.1 & jitter (per-chain $L$) & 0.924 [0.910, 0.986] & 1.00 [0.932, 1.01] \\
+WDBC & 0.1 & NUTS & 1.12 [0.859, 1.14] & 0.919 [0.803, 1.07] \\
+\addlinespace
+WDBC & 0.3 & jitter (shared $L$) & 0.599 [0.554, 0.604] & 0.520 [0.503, 0.531] \\
+WDBC & 0.3 & jitter (per-chain $L$) & 0.912 [0.876, 0.989] & 0.990 [0.973, 1.03] \\
+WDBC & 0.3 & NUTS & 0.957 [0.884, 0.974] & 0.898 [0.895, 0.919] \\
+\addlinespace
+Spambase & 0.1 & jitter (shared $L$) & 0.514 [0.507, 0.523] & 0.435 [0.433, 0.443] \\
+Spambase & 0.1 & jitter (per-chain $L$) & 1.01 [0.991, 1.03] & 0.969 [0.957, 1.02] \\
+Spambase & 0.1 & NUTS & 1.04 [0.875, 1.04] & 0.973 [0.903, 1.02] \\
+\addlinespace
+Spambase & 0.3 & jitter (shared $L$) & 0.807 [0.745, 0.854] & 0.655 [0.636, 0.682] \\
+Spambase & 0.3 & jitter (per-chain $L$) & 0.988 [0.920, 1.01] & 1.01 [0.990, 1.03] \\
+Spambase & 0.3 & NUTS & 0.959 [0.927, 0.985] & 0.975 [0.928, 1.04] \\
+\addlinespace
+Adult & 0.1 & jitter (shared $L$) & 0.295 [0.290, 0.321] & 0.273 [0.261, 0.284] \\
+Adult & 0.1 & jitter (per-chain $L$) & 0.955 [0.886, 0.986] & 0.960 [0.911, 0.985] \\
+Adult & 0.1 & NUTS & 1.04 [0.901, 1.25] & 1.13 [0.878, 1.21] \\
+\addlinespace
+Adult & 0.3 & jitter (shared $L$) & 0.673 [0.574, 0.689] & 0.536 [0.489, 0.550] \\
+Adult & 0.3 & jitter (per-chain $L$) & 0.955 [0.954, 0.958] & 0.980 [0.940, 1.04] \\
+Adult & 0.3 & NUTS & 0.796 [0.733, 0.806] & 0.697 [0.604, 0.925] \\
+% end
+\bottomrule
+\end{tabular}

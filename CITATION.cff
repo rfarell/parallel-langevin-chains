@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the paper."
+title: "How Should Parallel Langevin Chains Share Noise?"
+type: software
+authors:
+  - family-names: Farell
+    given-names: Ryan
+    affiliation: "The University of Texas at Austin"
+license: MIT
+repository-code: "https://github.com/rfarell/parallel-langevin-chains"
+preferred-citation:
+  type: conference-paper
+  title: "How Should Parallel Langevin Chains Share Noise?"
+  authors:
+    - family-names: Farell
+      given-names: Ryan
+  collection-title: "Advances in Neural Information Processing Systems"
+  volume: 39
+  year: 2026
+  url: "https://openreview.net/forum?id=dTLaD3Us8h"

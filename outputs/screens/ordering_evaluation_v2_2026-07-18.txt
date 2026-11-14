@@ -1,0 +1,38 @@
+ORDERING EVALUATION v2 (2026-07-18), corrected after the rescore result review.
+Supersedes the first evaluation of the same date,
+which covered only zs_eta1-vs-VI.
+ALL 48 sampler-vs-{VI,EP} pairs, both references, plus the V3-5 sampler-noise separation.
+Labels: U=floor-unresolved, N=neither at 1.5x, VI/EP=baseline ahead, <ARM>=sampler ahead.
+Archived floor = 5*spread (squared, paper rule); hardened floor = 25*r95^2 (five-r95 distance rule).
+
+wdbc/0.1: iid_eta1-VI:U->U iid_eta1-EP:U->U zs_eta1-VI:U->U zs_eta1-EP:U->U zs_eta2-VI:U->U zs_eta2-EP:U->U zs_mala-VI:U->U zs_mala-EP:U->U
+wdbc/0.3: iid_eta1-VI:U->U iid_eta1-EP:U->U zs_eta1-VI:U->U zs_eta1-EP:U->U zs_eta2-VI:U->U zs_eta2-EP:U->U zs_mala-VI:U->U zs_mala-EP:U->U
+spambase/0.1: iid_eta1-VI:U->U iid_eta1-EP:U->U zs_eta1-VI:U->U zs_eta1-EP:U->U zs_eta2-VI:U->U zs_eta2-EP:U->U zs_mala-VI:U->U zs_mala-EP:U->U
+spambase/0.3: iid_eta1-VI:VI->U iid_eta1-EP:EP->U zs_eta1-VI:N->U zs_eta1-EP:N->U zs_eta2-VI:N->U zs_eta2-EP:N->U zs_mala-VI:VI->U zs_mala-EP:EP->U
+adult/0.1: iid_eta1-VI:U->U iid_eta1-EP:U->U zs_eta1-VI:U->U zs_eta1-EP:U->U zs_eta2-VI:U->U zs_eta2-EP:U->U zs_mala-VI:U->U zs_mala-EP:U->U
+adult/0.3: iid_eta1-VI:U->U iid_eta1-EP:U->U zs_eta1-VI:U->U zs_eta1-EP:U->U zs_eta2-VI:U->U zs_eta2-EP:U->U zs_mala-VI:U->U zs_mala-EP:U->U
+
+PAIRED archived->hardened label changes (same estimates, two references): 8
+   ('spambase', 0.3, 'iid_eta1', 'VI', 'VI', 'U')
+   ('spambase', 0.3, 'iid_eta1', 'EP', 'EP', 'U')
+   ('spambase', 0.3, 'zs_eta1', 'VI', 'N', 'U')
+   ('spambase', 0.3, 'zs_eta1', 'EP', 'N', 'U')
+   ('spambase', 0.3, 'zs_eta2', 'VI', 'N', 'U')
+   ('spambase', 0.3, 'zs_eta2', 'EP', 'N', 'U')
+   ('spambase', 0.3, 'zs_mala', 'VI', 'VI', 'U')
+   ('spambase', 0.3, 'zs_mala', 'EP', 'EP', 'U')
+TRUE PAIRED DIRECTIONAL changes (these fire the V3-5 disclosure): 4
+   ('spambase', 0.3, 'iid_eta1', 'VI', 'VI', 'U')
+   ('spambase', 0.3, 'iid_eta1', 'EP', 'EP', 'U')
+   ('spambase', 0.3, 'zs_mala', 'VI', 'VI', 'U')
+   ('spambase', 0.3, 'zs_mala', 'EP', 'EP', 'U')
+
+SAMPLER-NOISE separation (original vs fresh seeds, SAME archived reference, spambase/0.3 C*-eta1):
+  original fit 0.009889 -> VI ratio 1.719x, EP ratio 1.714x (ordered, >=1.5)
+  fresh fit 0.013876 -> VI ratio 1.225x, EP ratio 1.221x (N, <1.5)
+  => TWO original->fresh archived C*-eta1 sampler-noise changes (vs VI and vs EP); NOT reference-change effects.
+
+CONSEQUENCE (registered disclosure rule): the four true paired directional changes at
+spambase/0.3 (iid-VI, iid-EP, MALA-VI, MALA-EP: baseline-ordered -> floor-unresolved) fire the
+rule.  Hardened gold becomes the PRIMARY reference; archived results move to the appendix with
+the full 48-pair both-reference grid and the sampler-noise separation preserved.

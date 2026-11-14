@@ -1,0 +1,2442 @@
+{
+ "cells": {
+  "0": {
+   "K": 8,
+   "a": 2.0,
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     21,
+     47,
+     90
+    ],
+    "common": [
+     20,
+     47,
+     94
+    ],
+    "iid": [
+     20,
+     45,
+     90
+    ],
+    "zero_sum": [
+     21,
+     46,
+     92
+    ]
+   },
+   "name": "mild",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "unresolved",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     168.47,
+     0.02
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     6.83785,
+     9.15364
+    ],
+    "g2": [
+     0.07,
+     0.02
+    ],
+    "per_rep": [
+     8.2245,
+     7.47705,
+     8.08781
+    ],
+    "ratio": 7.91146
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.39332,
+     0.52948
+    ],
+    "g2": [
+     0.22,
+     0.02
+    ],
+    "per_rep": [
+     0.52202,
+     0.46521,
+     0.37794
+    ],
+    "ratio": 0.45635
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     47.99,
+     0.0
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_ratio_common": {
+    "ci": [
+     6.78005,
+     9.0771
+    ],
+    "g2": [
+     0.08,
+     0.0
+    ],
+    "per_rep": [
+     8.19899,
+     7.46403,
+     7.90949
+    ],
+    "ratio": 7.84495
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.37959,
+     0.51024
+    ],
+    "g2": [
+     0.2,
+     0.0
+    ],
+    "per_rep": [
+     0.4963,
+     0.45383,
+     0.36653
+    ],
+    "ratio": 0.4401
+   },
+   "rho_antithetic": -0.1429,
+   "rho_common": 1.0,
+   "rho_iid": 0.0,
+   "rho_zero_sum": -0.0649,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     NaN,
+     NaN
+    ],
+    "g2": [
+     NaN,
+     -1.77
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     7.76872,
+     8.55952
+    ],
+    "g2": [
+     -1.78,
+     -1.77
+    ],
+    "per_rep": [
+     8.14901,
+     8.39521,
+     7.92671
+    ],
+    "ratio": 8.15454
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.77,
+     -1.77
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     239.57,
+     -0.63
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_common": {
+    "ci": [
+     6.98998,
+     8.88154
+    ],
+    "g2": [
+     -0.62,
+     -0.63
+    ],
+    "per_rep": [
+     8.14299,
+     7.57727,
+     7.93943
+    ],
+    "ratio": 7.8792
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.23526,
+     0.30906
+    ],
+    "g2": [
+     0.2,
+     -0.63
+    ],
+    "per_rep": [
+     0.30206,
+     0.2832,
+     0.22147
+    ],
+    "ratio": 0.26964
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     239.57,
+     0.02
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_x1_common": {
+    "ci": [
+     6.75633,
+     9.04868
+    ],
+    "g2": [
+     0.08,
+     0.02
+    ],
+    "per_rep": [
+     8.14165,
+     7.41259,
+     7.94241
+    ],
+    "ratio": 7.81895
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.28336,
+     0.38118
+    ],
+    "g2": [
+     0.2,
+     0.02
+    ],
+    "per_rep": [
+     0.36947,
+     0.34022,
+     0.27331
+    ],
+    "ratio": 0.32865
+   },
+   "w": 0.5
+  },
+  "1": {
+   "K": 8,
+   "a": 3.5,
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     679,
+     1597,
+     3182
+    ],
+    "common": [
+     654,
+     1517,
+     3041
+    ],
+    "iid": [
+     628,
+     1499,
+     3075
+    ],
+    "zero_sum": [
+     645,
+     1536,
+     3123
+    ]
+   },
+   "name": "intermediate",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "parity",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -2.0,
+     -0.09
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     6.66073,
+     8.74555
+    ],
+    "g2": [
+     -0.35,
+     -0.09
+    ],
+    "per_rep": [
+     8.39741,
+     6.70333,
+     7.97008
+    ],
+    "ratio": 7.63228
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.89684,
+     1.18241
+    ],
+    "g2": [
+     -0.25,
+     -0.09
+    ],
+    "per_rep": [
+     1.17047,
+     0.86496,
+     1.08476
+    ],
+    "ratio": 1.02977
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     760.0,
+     -0.09
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_ratio_common": {
+    "ci": [
+     6.66113,
+     8.74587
+    ],
+    "g2": [
+     -0.35,
+     -0.09
+    ],
+    "per_rep": [
+     8.39767,
+     6.70295,
+     7.97138
+    ],
+    "ratio": 7.63265
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.89685,
+     1.18238
+    ],
+    "g2": [
+     -0.25,
+     -0.09
+    ],
+    "per_rep": [
+     1.17065,
+     0.86508,
+     1.08439
+    ],
+    "ratio": 1.02976
+   },
+   "rho_antithetic": -0.1429,
+   "rho_common": 1.0,
+   "rho_iid": -0.0005,
+   "rho_zero_sum": -0.0052,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     NaN,
+     NaN
+    ],
+    "g2": [
+     NaN,
+     -1.78
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     7.59371,
+     8.34994
+    ],
+    "g2": [
+     -1.79,
+     -1.78
+    ],
+    "per_rep": [
+     8.21256,
+     8.1988,
+     7.48919
+    ],
+    "ratio": 7.96285
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.78,
+     -1.78
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     735.0,
+     -0.1
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_common": {
+    "ci": [
+     6.66017,
+     8.73765
+    ],
+    "g2": [
+     -0.36,
+     -0.1
+    ],
+    "per_rep": [
+     8.3732,
+     6.72123,
+     7.95838
+    ],
+    "ratio": 7.62852
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.88733,
+     1.16929
+    ],
+    "g2": [
+     -0.25,
+     -0.1
+    ],
+    "per_rep": [
+     1.15585,
+     0.85671,
+     1.07306
+    ],
+    "ratio": 1.0186
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     735.0,
+     -0.09
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_x1_common": {
+    "ci": [
+     6.6569,
+     8.73987
+    ],
+    "g2": [
+     -0.35,
+     -0.09
+    ],
+    "per_rep": [
+     8.37366,
+     6.71767,
+     7.95975
+    ],
+    "ratio": 7.62761
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.88955,
+     1.17268
+    ],
+    "g2": [
+     -0.25,
+     -0.09
+    ],
+    "per_rep": [
+     1.15912,
+     0.85877,
+     1.0762
+    ],
+    "ratio": 1.02135
+   },
+   "w": 0.5
+  },
+  "2": {
+   "K": 8,
+   "a": 4.0,
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     3263,
+     8120,
+     16272
+    ],
+    "common": [
+     3342,
+     8111,
+     16500
+    ],
+    "iid": [
+     3320,
+     8188,
+     16627
+    ],
+    "zero_sum": [
+     3404,
+     8080,
+     16669
+    ]
+   },
+   "name": "metastable",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "parity",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -2.0,
+     -0.12
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     7.22541,
+     9.48988
+    ],
+    "g2": [
+     -0.32,
+     -0.12
+    ],
+    "per_rep": [
+     9.20947,
+     8.02761,
+     7.69901
+    ],
+    "ratio": 8.2806
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.87398,
+     1.15474
+    ],
+    "g2": [
+     -0.16,
+     -0.12
+    ],
+    "per_rep": [
+     0.99085,
+     1.08639,
+     0.93875
+    ],
+    "ratio": 1.0046
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -2.0,
+     -0.12
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_ratio_common": {
+    "ci": [
+     7.22543,
+     9.48993
+    ],
+    "g2": [
+     -0.32,
+     -0.12
+    ],
+    "per_rep": [
+     9.20954,
+     8.02752,
+     7.69912
+    ],
+    "ratio": 8.28063
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.874,
+     1.15477
+    ],
+    "g2": [
+     -0.16,
+     -0.12
+    ],
+    "per_rep": [
+     0.99094,
+     1.08639,
+     0.93873
+    ],
+    "ratio": 1.00462
+   },
+   "rho_antithetic": -0.1429,
+   "rho_common": 1.0,
+   "rho_iid": -0.0,
+   "rho_zero_sum": -0.001,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0156,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     NaN,
+     NaN
+    ],
+    "g2": [
+     NaN,
+     -1.78
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     7.63262,
+     8.40868
+    ],
+    "g2": [
+     -1.77,
+     -1.78
+    ],
+    "per_rep": [
+     8.20576,
+     7.70796,
+     8.13368
+    ],
+    "ratio": 8.01125
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.77,
+     -1.78
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     146.87,
+     -0.12
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_common": {
+    "ci": [
+     7.21925,
+     9.48104
+    ],
+    "g2": [
+     -0.32,
+     -0.12
+    ],
+    "per_rep": [
+     9.204,
+     8.01491,
+     7.69547
+    ],
+    "ratio": 8.27321
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.87159,
+     1.15156
+    ],
+    "g2": [
+     -0.16,
+     -0.12
+    ],
+    "per_rep": [
+     0.98858,
+     1.08319,
+     0.93598
+    ],
+    "ratio": 1.00184
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     146.87,
+     -0.11
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_x1_common": {
+    "ci": [
+     7.21893,
+     9.4817
+    ],
+    "g2": [
+     -0.32,
+     -0.11
+    ],
+    "per_rep": [
+     9.20442,
+     8.01504,
+     7.6953
+    ],
+    "ratio": 8.27331
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.87193,
+     1.15207
+    ],
+    "g2": [
+     -0.16,
+     -0.11
+    ],
+    "per_rep": [
+     0.98899,
+     1.08364,
+     0.93635
+    ],
+    "ratio": 1.00226
+   },
+   "w": 0.5
+  },
+  "3": {
+   "K": 8,
+   "a": 2.0,
+   "asym_occupancy_gap": -0.0187,
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     22,
+     53,
+     108
+    ],
+    "common": [
+     22,
+     51,
+     113
+    ],
+    "iid": [
+     22,
+     55,
+     114
+    ],
+    "zero_sum": [
+     22,
+     56,
+     115
+    ]
+   },
+   "name": "asym",
+   "occ_band_antithetic": "unresolved",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "unresolved",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.44321,
+     0.59396
+    ],
+    "g2": [
+     0.03,
+     0.08
+    ],
+    "per_rep": [
+     0.50896,
+     0.46645,
+     0.57003
+    ],
+    "ratio": 0.51308
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     6.76156,
+     8.98333
+    ],
+    "g2": [
+     -0.21,
+     0.08
+    ],
+    "per_rep": [
+     7.43109,
+     7.62961,
+     8.36794
+    ],
+    "ratio": 7.79367
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.48648,
+     0.65085
+    ],
+    "g2": [
+     -0.01,
+     0.08
+    ],
+    "per_rep": [
+     0.54017,
+     0.59629,
+     0.54904
+    ],
+    "ratio": 0.56269
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.4232,
+     0.56534
+    ],
+    "g2": [
+     -0.0,
+     0.03
+    ],
+    "per_rep": [
+     0.48246,
+     0.44602,
+     0.54528
+    ],
+    "ratio": 0.48913
+   },
+   "occ_ratio_common": {
+    "ci": [
+     6.71675,
+     8.92584
+    ],
+    "g2": [
+     -0.14,
+     0.03
+    ],
+    "per_rep": [
+     7.33783,
+     7.57401,
+     8.36966
+    ],
+    "ratio": 7.74291
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.47141,
+     0.63148
+    ],
+    "g2": [
+     0.08,
+     0.03
+    ],
+    "per_rep": [
+     0.53302,
+     0.56953,
+     0.53193
+    ],
+    "ratio": 0.5456
+   },
+   "rho_antithetic": -0.067,
+   "rho_common": 1.0,
+   "rho_iid": -0.0,
+   "rho_zero_sum": -0.0582,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     NaN,
+     NaN
+    ],
+    "g2": [
+     NaN,
+     -1.76
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     7.84734,
+     8.67478
+    ],
+    "g2": [
+     -1.76,
+     -1.76
+    ],
+    "per_rep": [
+     7.73582,
+     8.63474,
+     8.40481
+    ],
+    "ratio": 8.25069
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.75,
+     -1.76
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.25283,
+     0.3276
+    ],
+    "g2": [
+     0.01,
+     -0.79
+    ],
+    "per_rep": [
+     0.28269,
+     0.26664,
+     0.31622
+    ],
+    "ratio": 0.2878
+   },
+   "trace_full_common": {
+    "ci": [
+     6.97914,
+     8.70691
+    ],
+    "g2": [
+     -0.86,
+     -0.79
+    ],
+    "per_rep": [
+     7.31751,
+     7.77724,
+     8.31679
+    ],
+    "ratio": 7.7953
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.27514,
+     0.35722
+    ],
+    "g2": [
+     0.06,
+     -0.79
+    ],
+    "per_rep": [
+     0.3039,
+     0.33483,
+     0.30035
+    ],
+    "ratio": 0.31351
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.32037,
+     0.42724
+    ],
+    "g2": [
+     0.01,
+     -0.04
+    ],
+    "per_rep": [
+     0.36612,
+     0.33751,
+     0.41029
+    ],
+    "ratio": 0.36997
+   },
+   "trace_x1_common": {
+    "ci": [
+     6.64899,
+     8.83691
+    ],
+    "g2": [
+     -0.08,
+     -0.04
+    ],
+    "per_rep": [
+     7.19406,
+     7.54935,
+     8.2906
+    ],
+    "ratio": 7.66528
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.34868,
+     0.46582
+    ],
+    "g2": [
+     0.06,
+     -0.04
+    ],
+    "per_rep": [
+     0.39359,
+     0.42381,
+     0.3897
+    ],
+    "ratio": 0.40302
+   },
+   "w": 0.7
+  },
+  "4": {
+   "K": 8,
+   "a": 4.0,
+   "checkpoints": {
+    "10000": {
+     "band_antithetic": "partial",
+     "band_common": "hurts",
+     "band_zero_sum": "parity",
+     "degenerate": false,
+     "iid_any_right_frac": 0.987,
+     "ratio_antithetic": {
+      "ci": [
+       0.51646,
+       0.6786
+      ],
+      "g2": [
+       -0.4,
+       -0.02
+      ],
+      "per_rep": [
+       0.60661,
+       0.60162,
+       0.56663
+      ],
+      "ratio": 0.59201
+     },
+     "ratio_common": {
+      "ci": [
+       6.91335,
+       8.90423
+      ],
+      "g2": [
+       -0.91,
+       -0.02
+      ],
+      "per_rep": [
+       8.37715,
+       6.82329,
+       8.3587
+      ],
+      "ratio": 7.8459
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.82605,
+       1.09491
+      ],
+      "g2": [
+       -0.17,
+       -0.02
+      ],
+      "per_rep": [
+       0.96265,
+       0.86176,
+       1.03225
+      ],
+      "ratio": 0.95103
+     },
+     "zero_escape_antithetic": 0.0,
+     "zero_escape_common": 0.4023,
+     "zero_escape_iid": 0.0013,
+     "zero_escape_zero_sum": 0.0013
+    },
+    "100000": {
+     "band_antithetic": "transfers",
+     "band_common": "hurts",
+     "band_zero_sum": "parity",
+     "degenerate": false,
+     "iid_any_right_frac": 0.9961,
+     "ratio_antithetic": {
+      "ci": [
+       0.06064,
+       0.08515
+      ],
+      "g2": [
+       1.69,
+       -0.16
+      ],
+      "per_rep": [
+       0.06979,
+       0.07274,
+       0.07302
+      ],
+      "ratio": 0.07186
+     },
+     "ratio_common": {
+      "ci": [
+       7.41308,
+       9.73921
+      ],
+      "g2": [
+       -0.26,
+       -0.16
+      ],
+      "per_rep": [
+       9.18154,
+       7.72724,
+       8.60848
+      ],
+      "ratio": 8.49691
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.92681,
+       1.22649
+      ],
+      "g2": [
+       -0.07,
+       -0.16
+      ],
+      "per_rep": [
+       1.13698,
+       1.10614,
+       0.95364
+      ],
+      "ratio": 1.06617
+     },
+     "zero_escape_antithetic": 0.0,
+     "zero_escape_common": 0.0,
+     "zero_escape_iid": 0.0,
+     "zero_escape_zero_sum": 0.0
+    },
+    "2000": {
+     "band_antithetic": "unresolved",
+     "band_common": "hurts",
+     "band_zero_sum": "unresolved",
+     "degenerate": false,
+     "iid_any_right_frac": 0.7044,
+     "ratio_antithetic": {
+      "ci": [
+       0.82222,
+       1.14071
+      ],
+      "g2": [
+       0.15,
+       0.99
+      ],
+      "per_rep": [
+       1.11201,
+       0.78669,
+       1.02537
+      ],
+      "ratio": 0.96846
+     },
+     "ratio_common": {
+      "ci": [
+       7.25481,
+       11.53094
+      ],
+      "g2": [
+       5.31,
+       0.99
+      ],
+      "per_rep": [
+       10.86221,
+       7.53904,
+       9.1433
+      ],
+      "ratio": 9.1463
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.96924,
+       1.44084
+      ],
+      "g2": [
+       2.55,
+       0.99
+      ],
+      "per_rep": [
+       1.14244,
+       0.99757,
+       1.44882
+      ],
+      "ratio": 1.18174
+     },
+     "zero_escape_antithetic": 0.2604,
+     "zero_escape_common": 0.8177,
+     "zero_escape_iid": 0.2448,
+     "zero_escape_zero_sum": 0.2161
+    },
+    "20000": {
+     "band_antithetic": "transfers",
+     "band_common": "hurts",
+     "band_zero_sum": "parity",
+     "degenerate": false,
+     "iid_any_right_frac": 0.9974,
+     "ratio_antithetic": {
+      "ci": [
+       0.33939,
+       0.44976
+      ],
+      "g2": [
+       0.14,
+       -0.33
+      ],
+      "per_rep": [
+       0.4244,
+       0.39343,
+       0.35976
+      ],
+      "ratio": 0.3907
+     },
+     "ratio_common": {
+      "ci": [
+       7.17706,
+       9.0547
+      ],
+      "g2": [
+       -1.07,
+       -0.33
+      ],
+      "per_rep": [
+       9.19715,
+       8.02305,
+       7.14322
+      ],
+      "ratio": 8.0614
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.93352,
+       1.21926
+      ],
+      "g2": [
+       -0.24,
+       -0.33
+      ],
+      "per_rep": [
+       1.12753,
+       0.95706,
+       1.12058
+      ],
+      "ratio": 1.06687
+     },
+     "zero_escape_antithetic": 0.0,
+     "zero_escape_common": 0.1471,
+     "zero_escape_iid": 0.0,
+     "zero_escape_zero_sum": 0.0
+    },
+    "200000": {
+     "band_antithetic": "transfers",
+     "band_common": "hurts",
+     "band_zero_sum": "parity",
+     "degenerate": false,
+     "iid_any_right_frac": 0.9974,
+     "ratio_antithetic": {
+      "ci": [
+       0.0262,
+       0.03689
+      ],
+      "g2": [
+       1.69,
+       -0.07
+      ],
+      "per_rep": [
+       0.02805,
+       0.03429,
+       0.03132
+      ],
+      "ratio": 0.03109
+     },
+     "ratio_common": {
+      "ci": [
+       6.70871,
+       8.90699
+      ],
+      "g2": [
+       -0.08,
+       -0.07
+      ],
+      "per_rep": [
+       7.21276,
+       8.59883,
+       7.46414
+      ],
+      "ratio": 7.7301
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.86616,
+       1.14604
+      ],
+      "g2": [
+       -0.17,
+       -0.07
+      ],
+      "per_rep": [
+       0.94268,
+       1.13229,
+       0.92541
+      ],
+      "ratio": 0.99632
+     },
+     "zero_escape_antithetic": 0.0,
+     "zero_escape_common": 0.0,
+     "zero_escape_iid": 0.0,
+     "zero_escape_zero_sum": 0.0
+    },
+    "5000": {
+     "band_antithetic": "unresolved",
+     "band_common": "hurts",
+     "band_zero_sum": "parity",
+     "degenerate": false,
+     "iid_any_right_frac": 0.9388,
+     "ratio_antithetic": {
+      "ci": [
+       0.6986,
+       0.92683
+      ],
+      "g2": [
+       -0.43,
+       0.26
+      ],
+      "per_rep": [
+       0.87653,
+       0.73001,
+       0.80721
+      ],
+      "ratio": 0.80467
+     },
+     "ratio_common": {
+      "ci": [
+       7.6903,
+       10.42334
+      ],
+      "g2": [
+       0.18,
+       0.26
+      ],
+      "per_rep": [
+       9.6246,
+       7.73064,
+       9.54402
+      ],
+      "ratio": 8.95313
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       0.86124,
+       1.17897
+      ],
+      "g2": [
+       0.47,
+       0.26
+      ],
+      "per_rep": [
+       1.05222,
+       0.94576,
+       1.0261
+      ],
+      "ratio": 1.00766
+     },
+     "zero_escape_antithetic": 0.0352,
+     "zero_escape_common": 0.6237,
+     "zero_escape_iid": 0.0247,
+     "zero_escape_zero_sum": 0.0299
+    },
+    "50000": {
+     "band_antithetic": "transfers",
+     "band_common": "hurts",
+     "band_zero_sum": "unresolved",
+     "degenerate": false,
+     "iid_any_right_frac": 0.9974,
+     "ratio_antithetic": {
+      "ci": [
+       0.13407,
+       0.18838
+      ],
+      "g2": [
+       1.68,
+       -0.12
+      ],
+      "per_rep": [
+       0.14773,
+       0.17045,
+       0.15936
+      ],
+      "ratio": 0.15892
+     },
+     "ratio_common": {
+      "ci": [
+       7.48723,
+       9.73104
+      ],
+      "g2": [
+       -0.58,
+       -0.12
+      ],
+      "per_rep": [
+       8.09784,
+       9.16242,
+       8.38285
+      ],
+      "ratio": 8.53572
+     },
+     "ratio_zero_sum": {
+      "ci": [
+       1.05591,
+       1.38872
+      ],
+      "g2": [
+       -0.27,
+       -0.12
+      ],
+      "per_rep": [
+       1.25636,
+       1.18843,
+       1.18563
+      ],
+      "ratio": 1.21094
+     },
+     "zero_escape_antithetic": 0.0,
+     "zero_escape_common": 0.0091,
+     "zero_escape_iid": 0.0,
+     "zero_escape_zero_sum": 0.0
+    }
+   },
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     3351,
+     8033,
+     16229
+    ],
+    "common": [
+     2803,
+     7763,
+     15209
+    ],
+    "iid": [
+     3358,
+     7854,
+     16071
+    ],
+    "zero_sum": [
+     3208,
+     7868,
+     16218
+    ]
+   },
+   "name": "coldstart",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "parity",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0262,
+     0.03689
+    ],
+    "g2": [
+     1.69,
+     -0.07
+    ],
+    "per_rep": [
+     0.02805,
+     0.03429,
+     0.03132
+    ],
+    "ratio": 0.03109
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     6.70832,
+     8.90652
+    ],
+    "g2": [
+     -0.08,
+     -0.07
+    ],
+    "per_rep": [
+     7.21236,
+     8.59824,
+     7.46381
+    ],
+    "ratio": 7.72967
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.86614,
+     1.14602
+    ],
+    "g2": [
+     -0.17,
+     -0.07
+    ],
+    "per_rep": [
+     0.94267,
+     1.13224,
+     0.92541
+    ],
+    "ratio": 0.9963
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0262,
+     0.03689
+    ],
+    "g2": [
+     1.69,
+     -0.07
+    ],
+    "per_rep": [
+     0.02805,
+     0.03429,
+     0.03132
+    ],
+    "ratio": 0.03109
+   },
+   "occ_ratio_common": {
+    "ci": [
+     6.70871,
+     8.90699
+    ],
+    "g2": [
+     -0.08,
+     -0.07
+    ],
+    "per_rep": [
+     7.21276,
+     8.59883,
+     7.46414
+    ],
+    "ratio": 7.7301
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.86616,
+     1.14604
+    ],
+    "g2": [
+     -0.17,
+     -0.07
+    ],
+    "per_rep": [
+     0.94268,
+     1.13229,
+     0.92541
+    ],
+    "ratio": 0.99632
+   },
+   "rho_antithetic": -0.123,
+   "rho_common": 0.9999,
+   "rho_iid": 0.0129,
+   "rho_zero_sum": 0.0127,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0013,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     1e-05,
+     1e-05
+    ],
+    "g2": [
+     -1.77,
+     -1.76
+    ],
+    "per_rep": [
+     1e-05,
+     1e-05,
+     1e-05
+    ],
+    "ratio": 1e-05
+   },
+   "trace_block_common": {
+    "ci": [
+     7.71167,
+     8.50753
+    ],
+    "g2": [
+     -1.77,
+     -1.76
+    ],
+    "per_rep": [
+     7.84896,
+     8.4108,
+     8.05087
+    ],
+    "ratio": 8.09983
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     1e-05,
+     1e-05
+    ],
+    "g2": [
+     -1.77,
+     -1.76
+    ],
+    "per_rep": [
+     1e-05,
+     1e-05,
+     1e-05
+    ],
+    "ratio": 1e-05
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.02615,
+     0.03682
+    ],
+    "g2": [
+     1.69,
+     -0.07
+    ],
+    "per_rep": [
+     0.02802,
+     0.03422,
+     0.03124
+    ],
+    "ratio": 0.03103
+   },
+   "trace_full_common": {
+    "ci": [
+     6.70721,
+     8.90365
+    ],
+    "g2": [
+     -0.08,
+     -0.07
+    ],
+    "per_rep": [
+     7.22122,
+     8.58924,
+     7.4567
+    ],
+    "ratio": 7.72778
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.86454,
+     1.14377
+    ],
+    "g2": [
+     -0.17,
+     -0.07
+    ],
+    "per_rep": [
+     0.94168,
+     1.12989,
+     0.92294
+    ],
+    "ratio": 0.9944
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.02616,
+     0.03684
+    ],
+    "g2": [
+     1.69,
+     -0.07
+    ],
+    "per_rep": [
+     0.02803,
+     0.03423,
+     0.03125
+    ],
+    "ratio": 0.03104
+   },
+   "trace_x1_common": {
+    "ci": [
+     6.70671,
+     8.90398
+    ],
+    "g2": [
+     -0.08,
+     -0.07
+    ],
+    "per_rep": [
+     7.22099,
+     8.58931,
+     7.45646
+    ],
+    "ratio": 7.72764
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.86485,
+     1.14425
+    ],
+    "g2": [
+     -0.17,
+     -0.07
+    ],
+    "per_rep": [
+     0.94203,
+     1.13035,
+     0.92331
+    ],
+    "ratio": 0.99479
+   },
+   "w": 0.5
+  },
+  "5": {
+   "K": 16,
+   "a": 4.0,
+   "eta": 0.25,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     3445,
+     8241,
+     16219
+    ],
+    "common": [
+     3401,
+     7673,
+     15933
+    ],
+    "iid": [
+     3301,
+     7917,
+     16007
+    ],
+    "zero_sum": [
+     3328,
+     8078,
+     16148
+    ]
+   },
+   "name": "k16",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "parity",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -2.0,
+     -0.15
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     13.80427,
+     18.16475
+    ],
+    "g2": [
+     -0.23,
+     -0.15
+    ],
+    "per_rep": [
+     15.15849,
+     16.51889,
+     15.9074
+    ],
+    "ratio": 15.83512
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.91463,
+     1.21101
+    ],
+    "g2": [
+     -0.07,
+     -0.15
+    ],
+    "per_rep": [
+     1.22304,
+     0.94277,
+     0.98161
+    ],
+    "ratio": 1.05244
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -2.0,
+     -0.15
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_ratio_common": {
+    "ci": [
+     13.80508,
+     18.16598
+    ],
+    "g2": [
+     -0.23,
+     -0.15
+    ],
+    "per_rep": [
+     15.16042,
+     16.51978,
+     15.90756
+    ],
+    "ratio": 15.83612
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.91471,
+     1.21112
+    ],
+    "g2": [
+     -0.07,
+     -0.15
+    ],
+    "per_rep": [
+     1.22316,
+     0.94282,
+     0.98171
+    ],
+    "ratio": 1.05253
+   },
+   "rho_antithetic": -0.0667,
+   "rho_common": 1.0,
+   "rho_iid": 0.0007,
+   "rho_zero_sum": -0.0006,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0104,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.78,
+     -1.75
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     15.33146,
+     16.95151
+    ],
+    "g2": [
+     -1.76,
+     -1.75
+    ],
+    "per_rep": [
+     16.97271,
+     15.05064,
+     16.42556
+    ],
+    "ratio": 16.12115
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.8,
+     -1.75
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     127.45,
+     -0.16
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_common": {
+    "ci": [
+     13.79428,
+     18.14762
+    ],
+    "g2": [
+     -0.23,
+     -0.16
+    ],
+    "per_rep": [
+     15.16406,
+     16.4993,
+     15.88252
+    ],
+    "ratio": 15.82193
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.91316,
+     1.20883
+    ],
+    "g2": [
+     -0.07,
+     -0.16
+    ],
+    "per_rep": [
+     1.2206,
+     0.94249,
+     0.97906
+    ],
+    "ratio": 1.05065
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     127.59,
+     -0.16
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_x1_common": {
+    "ci": [
+     13.79336,
+     18.14854
+    ],
+    "g2": [
+     -0.23,
+     -0.16
+    ],
+    "per_rep": [
+     15.16334,
+     16.50001,
+     15.88232
+    ],
+    "ratio": 15.8218
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.91352,
+     1.20937
+    ],
+    "g2": [
+     -0.07,
+     -0.16
+    ],
+    "per_rep": [
+     1.22109,
+     0.94295,
+     0.97943
+    ],
+    "ratio": 1.05109
+   },
+   "w": 0.5
+  },
+  "6": {
+   "K": 8,
+   "a": 2.0,
+   "eta": 0.1,
+   "fpt_pooled_quartiles": {
+    "antithetic": [
+     48,
+     110,
+     224
+    ],
+    "common": [
+     51,
+     114,
+     227
+    ],
+    "iid": [
+     48,
+     114,
+     221
+    ],
+    "zero_sum": [
+     47,
+     112,
+     222
+    ]
+   },
+   "name": "eta01",
+   "occ_band_antithetic": "transfers",
+   "occ_band_common": "hurts",
+   "occ_band_zero_sum": "unresolved",
+   "occ_hyst_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     700.88,
+     -0.35
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_hyst_ratio_common": {
+    "ci": [
+     8.06453,
+     10.69968
+    ],
+    "g2": [
+     0.19,
+     -0.35
+    ],
+    "per_rep": [
+     8.00044,
+     9.40575,
+     10.69169
+    ],
+    "ratio": 9.28913
+   },
+   "occ_hyst_ratio_zero_sum": {
+    "ci": [
+     0.43926,
+     0.57841
+    ],
+    "g2": [
+     -0.01,
+     -0.35
+    ],
+    "per_rep": [
+     0.46364,
+     0.44223,
+     0.62654
+    ],
+    "ratio": 0.50406
+   },
+   "occ_ratio_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     98.62,
+     -0.37
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "occ_ratio_common": {
+    "ci": [
+     8.09609,
+     10.72924
+    ],
+    "g2": [
+     0.17,
+     -0.37
+    ],
+    "per_rep": [
+     7.98874,
+     9.41562,
+     10.81926
+    ],
+    "ratio": 9.32014
+   },
+   "occ_ratio_zero_sum": {
+    "ci": [
+     0.43569,
+     0.57332
+    ],
+    "g2": [
+     -0.02,
+     -0.37
+    ],
+    "per_rep": [
+     0.45603,
+     0.43959,
+     0.62546
+    ],
+    "ratio": 0.49979
+   },
+   "rho_antithetic": -0.1429,
+   "rho_common": 1.0,
+   "rho_iid": 0.0002,
+   "rho_zero_sum": -0.0655,
+   "stuck_frac": {
+    "antithetic": 0.0,
+    "common": 0.0,
+    "iid": 0.0,
+    "zero_sum": 0.0
+   },
+   "trace_block_antithetic": {
+    "ci": [
+     NaN,
+     NaN
+    ],
+    "g2": [
+     NaN,
+     -1.76
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_block_common": {
+    "ci": [
+     7.59664,
+     8.37181
+    ],
+    "g2": [
+     -1.78,
+     -1.76
+    ],
+    "per_rep": [
+     8.21286,
+     7.60585,
+     8.119
+    ],
+    "ratio": 7.97481
+   },
+   "trace_block_zero_sum": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     -1.78,
+     -1.76
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     650.56,
+     -0.96
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_full_common": {
+    "ci": [
+     8.01119,
+     10.08327
+    ],
+    "g2": [
+     -0.5,
+     -0.96
+    ],
+    "per_rep": [
+     7.91104,
+     8.93707,
+     10.33819
+    ],
+    "ratio": 8.98771
+   },
+   "trace_full_zero_sum": {
+    "ci": [
+     0.26731,
+     0.34349
+    ],
+    "g2": [
+     -0.02,
+     -0.96
+    ],
+    "per_rep": [
+     0.2782,
+     0.26706,
+     0.37568
+    ],
+    "ratio": 0.30301
+   },
+   "trace_x1_antithetic": {
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "g2": [
+     650.56,
+     -0.41
+    ],
+    "per_rep": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "ratio": 0.0
+   },
+   "trace_x1_common": {
+    "ci": [
+     8.02666,
+     10.62439
+    ],
+    "g2": [
+     0.19,
+     -0.41
+    ],
+    "per_rep": [
+     7.84227,
+     9.25034,
+     10.94622
+    ],
+    "ratio": 9.23463
+   },
+   "trace_x1_zero_sum": {
+    "ci": [
+     0.32888,
+     0.43189
+    ],
+    "g2": [
+     -0.02,
+     -0.41
+    ],
+    "per_rep": [
+     0.34158,
+     0.3299,
+     0.47861
+    ],
+    "ratio": 0.37688
+   },
+   "w": 0.5
+  }
+ },
+ "float64_check_cell2_rep0": {
+  "antithetic": {
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "g2": [
+    -2.0,
+    0.04
+   ],
+   "per_rep": [
+    0.0
+   ],
+   "ratio": 0.0
+  },
+  "common": {
+   "ci": [
+    6.54628,
+    10.55883
+   ],
+   "g2": [
+    -0.38,
+    0.04
+   ],
+   "per_rep": [
+    8.31391
+   ],
+   "ratio": 8.31391
+  },
+  "zero_sum": {
+   "ci": [
+    0.65968,
+    1.10333
+   ],
+   "g2": [
+    0.2,
+    0.04
+   ],
+   "per_rep": [
+    0.85314
+   ],
+   "ratio": 0.85314
+  }
+ },
+ "gate_failures": [],
+ "gates_passed": 131,
+ "gates_total": 131,
+ "validator_failures": []
+}

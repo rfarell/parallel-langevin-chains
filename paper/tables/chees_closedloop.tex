@@ -1,0 +1,19 @@
+% CAPTION-REQUIRED (V2-5/V2-N/V3-5): freeze step 450 (EMA/dual-avg
+% freeze), tuner one-liner (ChEES Adam lr 0.025 beta2 0.95 on log T;
+% dual averaging to harmonic-mean acceptance 0.651; rotated-Halton
+% jitter), iid-arm across-replicate spread as noise floor, any QC
+% flags, and the three-replicate fragility caveat: per-cell medians
+% adjacent to the 0.80/0.81 thresholds are fragile; no verdict
+% stability under replicate deletion is claimed.
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & prior & closed $C_\star$/iid & closed pairwise/iid & RS(A) & RS(B) & $A_T$ \\
+\midrule
+WDBC & 0.1 & 0.537 [0.420, 0.573] & 0.521 [0.464, 0.611] & 0.524 [0.485, 0.545] & 0.494 [0.432, 0.515] & 0.975 [0.968, 0.999] \\
+WDBC & 0.3 & 0.601 [0.498, 0.622] & 0.496 [0.455, 0.543] & 0.539 [0.517, 0.562] & 0.538 [0.498, 0.552] & 1.01 [0.974, 1.01] \\
+Spambase & 0.1 & 0.412 [0.384, 0.453] & 0.328 [0.296, 0.352] & 0.470 [0.403, 0.498] & 0.426 [0.421, 0.456] & 0.972 [0.972, 0.983] \\
+Spambase & 0.3 & 0.522 [0.509, 0.545] & 0.421 [0.409, 0.588] & 0.401 [0.356, 0.450] & 0.377 [0.327, 0.399] & 0.904 [0.867, 0.918] \\
+Adult & 0.1 & 0.518 [0.408, 0.588] & 0.393 [0.347, 0.448] & 0.428 [0.349, 0.492] & 0.471 [0.398, 0.480] & 0.916 [0.889, 0.945] \\
+Adult & 0.3 & 0.781 [0.499, 0.870] & 0.558 [0.487, 0.624] & 0.386 [0.381, 0.548] & 0.352 [0.294, 0.411] & 0.879 [0.684, 0.966] \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+# downloaded datasets
+data/
+# regenerated figures and rerun outputs
+paper/figures/
+rerun/
+outputs/selftests/
+outputs/sweeps/chees_sidecars/
+outputs/sweeps/*_series_*.npz
+outputs/zv_*.json
+outputs/zv_*.jsonl
+outputs/multimodal_*.jsonl
+outputs/multimodal_*.json

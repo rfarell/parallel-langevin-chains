@@ -1,0 +1,11 @@
+\begin{tabular}{llclccc}
+\toprule
+Block & Replicates & Start scale & Worst cell & $C_\star K=8$/best iid cost & $C_\star$ odd-$K$/best odd cost & Max variance-time ratio \\
+\midrule
+primary & 300--305 & 0.00 & WDBC, 0.3 & 0.0119 & 0.0523 ($K=7$) & 0.0523 \\
+cross-node stress & 306--311 & 0.00 & WDBC, 0.3 & 0.0114 & 0.0555 ($K=7$) & 0.0555 \\
+independent starts & 312--317 & 0.25 & WDBC, 0.3 & 0.0115 & 0.0508 ($K=7$) & 0.0508 \\
+overdispersed starts & 318--323 & 1.00 & WDBC, 0.3 & 0.0162 & 0.0661 ($K=7$) & 0.0661 \\
+$K=5$ edge & 324--329 & 0.00 & WDBC, 0.3 & -- & 0.0421 ($K=5$) & 0.0421 \\
+\bottomrule
+\end{tabular}
