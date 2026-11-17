@@ -4,6 +4,7 @@ Code and raw results for the NeurIPS 2026 paper
 
 > Ryan Farell. *How Should Parallel Langevin Chains Share Noise?*
 > Advances in Neural Information Processing Systems 39 (NeurIPS 2026).
+> [arXiv:2611.19784](https://arxiv.org/abs/2611.19784) |
 > [Paper and reviews on OpenReview](https://openreview.net/forum?id=dTLaD3Us8h)
 
 Parallel Langevin samplers usually give every chain its own Gaussian noise.
@@ -16,7 +17,7 @@ measures it on synthetic targets and real posteriors.
 
 This repository contains the scripts that ran the experiments, the raw rows
 they produced, and the tables as printed. Table and figure numbers below are
-those of the camera-ready paper.
+those of the camera-ready paper. The arXiv version uses the same numbers.
 
 ## The coupling
 
@@ -410,11 +411,14 @@ The code and the generated data are released under the MIT License; see
 
 ```bibtex
 @inproceedings{farell2026parallel,
-  title     = {How Should Parallel {L}angevin Chains Share Noise?},
-  author    = {Farell, Ryan},
-  booktitle = {Advances in Neural Information Processing Systems},
-  volume    = {39},
-  year      = {2026},
-  url       = {https://openreview.net/forum?id=dTLaD3Us8h}
+  title         = {How Should Parallel {L}angevin Chains Share Noise?},
+  author        = {Farell, Ryan},
+  booktitle     = {Advances in Neural Information Processing Systems},
+  volume        = {39},
+  year          = {2026},
+  eprint        = {2611.19784},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.LG},
+  url           = {https://arxiv.org/abs/2611.19784}
 }
 ```
